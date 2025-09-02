@@ -107,10 +107,10 @@ function ngưng(){
     canHit=false;
     document.getElementById("hidden").src="./card/"+hidden+".png";
     let message="";
-    if(tongBan>21&&tongCai<21){
+    if(tongBan>21){
         message="thua rồi lêu lêu";
     }
-    else if(tongCai>21&&tongBan<21){
+    else if(tongCai>21){
         message="thắng rồi";
     }
     else if(tongBan>tongCai){
@@ -125,3 +125,4 @@ function ngưng(){
     document.getElementById("tổngbạn").innerText=tongBan;
     document.getElementById("kếtquả").innerText=message;
 }
+
